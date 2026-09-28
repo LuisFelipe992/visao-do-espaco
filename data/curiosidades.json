@@ -1,0 +1,38 @@
+[
+  {
+    "id": "dia-em-venus",
+    "nome": "Um dia em Vênus é maior que seu ano",
+    "simbolo": "♀",
+    "cor_predominante": "#e6b86a",
+    "descricao_curta": "Vênus gira tão devagar que um dia dura mais que sua volta em torno do Sol.",
+    "descricao_completa": "Vênus leva cerca de 243 dias terrestres para girar uma vez em torno de si e cerca de 225 para orbitar o Sol. Além disso, gira no sentido contrário ao da maioria dos planetas.",
+    "dados": { "Rotação": "~243 dias terrestres", "Translação": "~225 dias terrestres" },
+    "secoes": {
+      "explicacao": "A rotação retrógrada lenta pode ser resultado de colisões antigas e da influência das marés atmosféricas."
+    }
+  },
+  {
+    "id": "colher-estrela-neutrons",
+    "nome": "Uma colher de estrela de nêutrons",
+    "simbolo": "✺",
+    "cor_predominante": "#7fb7ff",
+    "descricao_curta": "Uma colher de chá de matéria de uma estrela de nêutrons pesaria bilhões de toneladas.",
+    "descricao_completa": "Estrelas de nêutrons concentram mais massa que o Sol em uma esfera com cerca de 20 km de diâmetro, atingindo densidades incompreensíveis no cotidiano.",
+    "dados": { "Diâmetro típico": "~20 km", "Massa típica": "1,4 a 2 massas solares" },
+    "secoes": {
+      "explicacao": "A gravidade esmaga prótons e elétrons em nêutrons, deixando o material quase sem espaço vazio."
+    }
+  },
+  {
+    "id": "luz-do-sol",
+    "nome": "Você vê o Sol do passado",
+    "simbolo": "☉",
+    "cor_predominante": "#f5c451",
+    "descricao_curta": "A luz do Sol leva pouco mais de 8 minutos para chegar à Terra.",
+    "descricao_completa": "Como a luz tem velocidade finita, tudo o que vemos no céu é o passado. O Sol que vemos agora é o de cerca de 8 minutos atrás; Sirius, o de 8,6 anos atrás.",
+    "dados": { "Tempo da luz Sol → Terra": "~8 min 20 s" },
+    "secoes": {
+      "explicacao": "A luz viaja a cerca de 300.000 km/s, e a distância média Terra–Sol é de cerca de 150 milhões de km."
+    }
+  }
+]

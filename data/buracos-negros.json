@@ -1,0 +1,63 @@
+[
+  {
+    "id": "sagitario-a",
+    "nome": "Sagitário A*",
+    "simbolo": "●",
+    "categoria": "buraco-negro",
+    "cor_predominante": "#e08a3c",
+    "tags": ["sgr a*", "centro galáctico"],
+    "descricao_curta": "O buraco negro supermassivo no centro da Via Láctea.",
+    "descricao_completa": "Sagitário A* é o buraco negro supermassivo situado no centro da nossa galáxia. Sua sombra foi fotografada pelo Event Horizon Telescope e divulgada em 2022.",
+    "tipo": "Supermassivo",
+    "massa": "~4,3 milhões de massas solares",
+    "diametro": "~24 milhões km (horizonte de eventos)",
+    "distancia": "~26.700 anos-luz",
+    "galeria": ["sgra_1", "sgra_2"],
+    "secoes": {
+      "historia": "A fonte de rádio foi identificada em 1974. Décadas de observação das órbitas de estrelas próximas, premiadas com o Nobel de Física de 2020, confirmaram a existência do objeto.",
+      "curiosidades": "A estrela S2 completa uma órbita ao redor dele em cerca de 16 anos, passando a milhares de km/s.",
+      "exploracao": "Observado por radiotelescópios em rede (EHT), pelo VLT e pelo James Webb.",
+      "missoes": ["Event Horizon Telescope (imagem em 2022)", "Chandra X-ray Observatory"],
+      "bibliografia": "Event Horizon Telescope Collaboration; ESO; NASA Chandra."
+    }
+  },
+  {
+    "id": "m87",
+    "nome": "M87*",
+    "simbolo": "●",
+    "categoria": "buraco-negro",
+    "cor_predominante": "#ffb14a",
+    "tags": ["messier 87", "primeira imagem"],
+    "descricao_curta": "O primeiro buraco negro já fotografado, no coração da galáxia M87.",
+    "descricao_completa": "M87* é o buraco negro supermassivo no centro da galáxia elíptica Messier 87. Em 2019 tornou-se o primeiro cuja sombra foi captada em imagem, e lança um jato de partículas que se estende por milhares de anos-luz.",
+    "tipo": "Supermassivo",
+    "massa": "~6,5 bilhões de massas solares",
+    "distancia": "~55 milhões de anos-luz",
+    "galeria": ["m87_1"],
+    "secoes": {
+      "caracteristicas": "Seu jato relativístico é visível em diversos comprimentos de onda.",
+      "exploracao": "A imagem histórica foi divulgada em abril de 2019 pela colaboração Event Horizon Telescope.",
+      "missoes": ["Event Horizon Telescope (2019)"],
+      "bibliografia": "Event Horizon Telescope Collaboration."
+    }
+  },
+  {
+    "id": "cygnus-x1",
+    "nome": "Cygnus X-1",
+    "simbolo": "●",
+    "categoria": "buraco-negro",
+    "cor_predominante": "#5fb0ff",
+    "tags": ["cisne x-1"],
+    "descricao_curta": "Um dos primeiros buracos negros de massa estelar confirmados.",
+    "descricao_completa": "Cygnus X-1 é um sistema binário de raios X em que um buraco negro de massa estelar puxa matéria de uma supergigante azul companheira. Foi um dos primeiros candidatos fortes a buraco negro.",
+    "tipo": "Massa estelar",
+    "massa": "~21 massas solares",
+    "distancia": "~7.200 anos-luz",
+    "galeria": ["cyg_1"],
+    "secoes": {
+      "historia": "Descoberto em 1964 por detectores de raios X em foguetes; tornou-se célebre pela aposta científica de Stephen Hawking em 1974.",
+      "curiosidades": "O gás capturado forma um disco de acreção que emite intensos raios X.",
+      "bibliografia": "NASA Chandra X-ray Observatory."
+    }
+  }
+]

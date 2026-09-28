@@ -1,0 +1,27 @@
+[
+  {
+    "id": "via-lactea",
+    "nome": "Via Láctea",
+    "categoria": "galaxia",
+    "descricao_curta": "A galáxia espiral barrada que abriga o Sistema Solar, entre centenas de bilhões de estrelas.",
+    "descricao_completa": "A Via Láctea é a galáxia que contém o Sistema Solar, uma galáxia espiral barrada com um disco de cerca de 100 mil anos-luz de diâmetro, contendo entre 100 e 400 bilhões de estrelas e um buraco negro supermassivo em seu centro.",
+    "diametro": "~100.000 anos-luz",
+    "massa": "~1,5 trilhão de massas solares",
+    "tipo": "Espiral barrada",
+    "numero_estrelas": "100 a 400 bilhões",
+    "distancia_terra": "Contém a Terra",
+    "imagem_capa": "via_lactea_capa",
+    "galeria": ["via_lactea_1", "via_lactea_2", "via_lactea_3"],
+    "secoes": {
+      "historia": "Seu nome vem da aparência leitosa observada a olho nu; Galileu foi o primeiro a resolver essa faixa de luz em estrelas individuais usando um telescópio, em 1610.",
+      "caracteristicas": "Possui braços espirais principais como Perseu, Sagitário e Escudo-Cruzeiro do Sul, onde o Sistema Solar orbita no braço de Órion, um braço menor.",
+      "formacao": "Formou-se há mais de 13 bilhões de anos pela fusão de estruturas menores, processo que continua atualmente com a incorporação de galáxias anãs vizinhas.",
+      "atmosfera": "Não aplicável a estruturas galácticas; o meio interestelar é composto por gás rarefeito e poeira cósmica distribuídos entre as estrelas.",
+      "geologia": "Não aplicável; a estrutura galáctica é organizada em disco, bojo central, halo estelar e um extenso halo de matéria escura.",
+      "curiosidades": "O Sistema Solar leva cerca de 230 milhões de anos para completar uma órbita ao redor do centro da Via Láctea.",
+      "exploracao": "Missões como a Gaia, da ESA, mapeiam com precisão sem precedentes a posição e o movimento de bilhões de estrelas da galáxia.",
+      "missoes": ["Gaia (2013–presente)", "Spitzer Space Telescope", "James Webb Space Telescope"],
+      "bibliografia": "ESA Gaia Data Release; NASA Chandra X-ray Observatory; European Southern Observatory research summaries."
+    }
+  }
+]

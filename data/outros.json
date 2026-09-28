@@ -1,0 +1,57 @@
+[
+  {
+    "id": "cometa-halley",
+    "nome": "Cometa Halley",
+    "simbolo": "☄",
+    "cor_predominante": "#9fd8e8",
+    "tipo": "Cometa periódico",
+    "descricao_curta": "O cometa mais famoso, visível da Terra a cada cerca de 76 anos.",
+    "descricao_completa": "O Halley é um cometa de período curto cujo núcleo mede cerca de 15 km de comprimento. Sua última passagem pelo periélio foi em 1986, e a próxima está prevista para 2061.",
+    "periodo_orbital": "~76 anos",
+    "diametro": "~15 km (núcleo, maior eixo)",
+    "galeria": ["halley_1"],
+    "secoes": {
+      "historia": "Edmond Halley previu seu retorno em 1705, e o cometa reapareceu em 1758, após sua morte.",
+      "exploracao": "Foi visitado por sondas internacionais em 1986, incluindo a europeia Giotto.",
+      "missoes": ["Giotto (1986)", "Vega 1 e 2 (1986)"],
+      "bibliografia": "ESA Giotto Mission; NASA."
+    }
+  },
+  {
+    "id": "nebulosa-de-orion",
+    "nome": "Nebulosa de Órion",
+    "simbolo": "✧",
+    "cor_predominante": "#e0578f",
+    "tipo": "Nebulosa de emissão",
+    "descricao_curta": "Berçário estelar visível a olho nu na espada de Órion.",
+    "descricao_completa": "A Nebulosa de Órion (M42) é uma das regiões de formação estelar mais próximas da Terra e uma das nebulosas mais brilhantes do céu.",
+    "distancia": "~1.340 anos-luz",
+    "diametro": "~24 anos-luz",
+    "galeria": ["orion_1", "orion_2"],
+    "secoes": {
+      "caracteristicas": "Abriga o aglomerado do Trapézio, com estrelas jovens e massivas que iluminam o gás ao redor.",
+      "exploracao": "Fotografada extensivamente pelo Hubble e pelo James Webb.",
+      "missoes": ["Hubble Space Telescope", "James Webb Space Telescope"],
+      "bibliografia": "NASA; ESA; ESO."
+    }
+  },
+  {
+    "id": "plutao",
+    "nome": "Plutão",
+    "simbolo": "♇",
+    "cor_predominante": "#c9a98c",
+    "tipo": "Planeta anão",
+    "descricao_curta": "Planeta anão do Cinturão de Kuiper, com uma grande planície de gelo em formato de coração.",
+    "descricao_completa": "Plutão foi considerado o nono planeta até 2006, quando foi reclassificado como planeta anão. A sonda New Horizons o sobrevoou em 2015, revelando montanhas de gelo e geleiras de nitrogênio.",
+    "diametro": "2.377 km",
+    "periodo_orbital": "~248 anos terrestres",
+    "temperatura": "-229°C (média)",
+    "galeria": ["plutao_1", "plutao_2"],
+    "secoes": {
+      "historia": "Descoberto em 1930 por Clyde Tombaugh no Observatório Lowell.",
+      "exploracao": "O sobrevoo da New Horizons em julho de 2015 foi o primeiro encontro com o planeta anão.",
+      "missoes": ["New Horizons (2015)"],
+      "bibliografia": "NASA New Horizons Mission."
+    }
+  }
+]

@@ -1,0 +1,64 @@
+[
+  {
+    "id": "vesta",
+    "nome": "Vesta",
+    "simbolo": "☄",
+    "categoria": "asteroide",
+    "cor_predominante": "#b8a58c",
+    "descricao_curta": "Um dos maiores corpos do cinturão de asteroides, quase um protoplaneta.",
+    "descricao_completa": "Vesta é o segundo objeto mais massivo do cinturão principal, com crosta, manto e núcleo diferenciados, o que a torna um protoplaneta sobrevivente. Fragmentos dela chegam à Terra como meteoritos.",
+    "tipo": "Asteroide rochoso",
+    "diametro": "~525 km",
+    "massa": "2,59 × 10^20 kg",
+    "distancia": "~2,36 UA do Sol",
+    "periodo_orbital": "3,63 anos terrestres",
+    "galeria": ["vesta_1", "vesta_2"],
+    "secoes": {
+      "historia": "Descoberta em 1807 por Heinrich Olbers.",
+      "geologia": "Possui uma imensa cratera de impacto no polo sul, chamada Rheasilvia.",
+      "exploracao": "A sonda Dawn orbitou Vesta entre 2011 e 2012.",
+      "missoes": ["Dawn (2011–2012)"],
+      "bibliografia": "NASA JPL Dawn Mission."
+    }
+  },
+  {
+    "id": "bennu",
+    "nome": "Bennu",
+    "simbolo": "☄",
+    "categoria": "asteroide",
+    "cor_predominante": "#5d5852",
+    "descricao_curta": "Asteroide próximo da Terra que teve amostras trazidas por uma sonda.",
+    "descricao_completa": "Bennu é um asteroide carbonáceo próximo da Terra, em forma de pião, considerado um remanescente primitivo do Sistema Solar. A missão OSIRIS-REx coletou amostras dele e as entregou à Terra em 2023.",
+    "tipo": "Asteroide carbonáceo",
+    "diametro": "~490 m",
+    "periodo_orbital": "~1,2 ano terrestre",
+    "galeria": ["bennu_1"],
+    "secoes": {
+      "historia": "Descoberto em 1999 pelo programa LINEAR.",
+      "exploracao": "OSIRIS-REx coletou material em 2020 e liberou a cápsula com as amostras em setembro de 2023.",
+      "missoes": ["OSIRIS-REx (2016–2023)"],
+      "bibliografia": "NASA OSIRIS-REx Mission."
+    }
+  },
+  {
+    "id": "ceres",
+    "nome": "Ceres",
+    "simbolo": "⚳",
+    "categoria": "asteroide",
+    "cor_predominante": "#8d8f99",
+    "tags": ["planeta anão"],
+    "descricao_curta": "O maior objeto do cinturão de asteroides, classificado como planeta anão.",
+    "descricao_completa": "Ceres é o maior corpo do cinturão principal e o único planeta anão do Sistema Solar interno. Concentra cerca de um terço da massa de todo o cinturão e possui depósitos brilhantes de sais na cratera Occator.",
+    "tipo": "Planeta anão",
+    "diametro": "~940 km",
+    "massa": "9,38 × 10^20 kg",
+    "periodo_orbital": "4,6 anos terrestres",
+    "galeria": ["ceres_1", "ceres_2"],
+    "secoes": {
+      "historia": "Descoberto em 1801 por Giuseppe Piazzi e inicialmente considerado um planeta.",
+      "exploracao": "A sonda Dawn entrou em órbita de Ceres em 2015.",
+      "missoes": ["Dawn (2015–2018)"],
+      "bibliografia": "NASA JPL Dawn Mission."
+    }
+  }
+]

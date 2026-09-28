@@ -1,0 +1,82 @@
+[
+  {
+    "id": "sol",
+    "nome": "Sol",
+    "simbolo": "☉",
+    "categoria": "estrela",
+    "ordem": 0,
+    "cor_predominante": "#f5c451",
+    "descricao_curta": "A estrela central do nosso Sistema Solar, uma anã amarela que sustenta toda a vida conhecida.",
+    "descricao_completa": "O Sol é a estrela no centro do Sistema Solar, responsável por 99,8% de toda a massa do sistema. É uma anã amarela de tipo espectral G2V, alimentada por fusão nuclear de hidrogênio em hélio.",
+    "diametro": "1.392.700 km",
+    "massa": "1,989 × 10^30 kg",
+    "gravidade": "274 m/s²",
+    "temperatura": "5.500°C (superfície)",
+    "tipo_espectral": "G2V (anã amarela)",
+    "idade": "~4,6 bilhões de anos",
+    "imagem_capa": "sol_capa",
+    "galeria": ["sol_1", "sol_2", "sol_3"]
+  },
+
+  {
+    "id": "sirius",
+    "nome": "Sirius",
+    "simbolo": "★",
+    "categoria": "estrela",
+    "ordem": 1,
+    "cor_predominante": "#b8d8ff",
+    "descricao_curta": "A estrela mais brilhante do céu noturno vista da Terra.",
+    "descricao_completa": "Sirius é um sistema estelar localizado na constelação do Cão Maior. É uma estrela branca de sequência principal muito mais luminosa que o Sol.",
+    "diametro": "2,4 vezes o diâmetro do Sol",
+    "massa": "2,02 massas solares",
+    "gravidade": "Maior que a do Sol",
+    "temperatura": "9.940°C",
+    "tipo_espectral": "A1V (estrela branca)",
+    "idade": "~242 milhões de anos",
+    "distancia": "8,6 anos-luz",
+    "imagem_capa": "sirius_capa",
+    "galeria": ["sirius_1", "sirius_2"],
+    "secoes": {
+      "historia": "Foi uma das estrelas mais importantes para diversas culturas antigas, especialmente para os egípcios, que associavam seu aparecimento ao início das cheias do Nilo.",
+      "caracteristicas": "É cerca de 25 vezes mais luminosa que o Sol e possui uma estrela companheira chamada Sirius B.",
+      "formacao": "Formou-se a partir do colapso de uma nuvem molecular há centenas de milhões de anos.",
+      "atmosfera": "Sua superfície extremamente quente produz uma coloração branca-azulada.",
+      "geologia": "Como todas as estrelas, não possui superfície sólida, sendo composta por plasma.",
+      "curiosidades": "Apesar de parecer uma única estrela, Sirius é um sistema binário.",
+      "exploracao": "É estudada por telescópios ópticos e instrumentos espaciais.",
+      "missoes": ["Gaia (2013–presente)"],
+      "bibliografia": "ESA Gaia Mission; NASA Star Catalogs."
+    }
+  },
+
+  {
+    "id": "betelgeuse",
+    "nome": "Betelgeuse",
+    "simbolo": "🔴",
+    "categoria": "estrela",
+    "ordem": 2,
+    "cor_predominante": "#c45a3c",
+    "descricao_curta": "Uma supergigante vermelha no ombro da constelação de Órion.",
+    "descricao_completa": "Betelgeuse é uma das maiores estrelas conhecidas, uma supergigante vermelha em fase avançada de evolução estelar.",
+    "diametro": "Cerca de 700 vezes o diâmetro do Sol",
+    "massa": "10 a 20 massas solares",
+    "gravidade": "Muito inferior à do Sol em sua superfície",
+    "temperatura": "3.500°C",
+    "tipo_espectral": "M1-M2 Ia (supergigante vermelha)",
+    "idade": "~8 milhões de anos",
+    "distancia": "~640 anos-luz",
+    "imagem_capa": "betelgeuse_capa",
+    "galeria": ["betelgeuse_1", "betelgeuse_2"],
+    "secoes": {
+      "historia": "Conhecida desde a antiguidade, seu nome vem de uma expressão árabe associada à constelação de Órion.",
+      "caracteristicas": "É uma estrela extremamente grande, podendo engolir a órbita de Marte se estivesse no lugar do Sol.",
+      "formacao": "Nasceu como uma estrela massiva e evoluiu rapidamente devido ao alto consumo de combustível nuclear.",
+      "atmosfera": "Possui uma atmosfera externa extensa e instável.",
+      "geologia": "Não possui superfície sólida, sendo formada por camadas de plasma.",
+      "curiosidades": "É uma candidata a explodir como supernova em algum momento no futuro astronômico.",
+      "exploracao": "Observada por telescópios como Hubble e Webb.",
+      "missoes": ["Hubble Space Telescope", "James Webb Space Telescope"],
+      "bibliografia": "NASA; European Southern Observatory."
+    }
+  }
+]

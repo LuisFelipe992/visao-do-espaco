@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sobre — Visão do Espaço</title>
+<link rel="stylesheet" href="css/style.css?v=2" />
+<link rel="stylesheet" href="css/components.css?v=2" />
+<link rel="stylesheet" href="css/animations.css?v=2" />
+</head>
+<body data-page="sobre">
+<canvas id="starfield"></canvas>
+<header class="site-header" id="site-header"></header>
+
+<main>
+  <section style="padding-top:64px">
+    <div class="wrap">
+      <div class="eyebrow reveal">O projeto</div>
+      <h1 class="reveal">Sobre o Visão do Espaço</h1>
+      <p class="reveal" style="max-width:60ch;font-size:1.05rem">
+        Visão do Espaço é uma enciclopédia visual do Universo: uma mistura de museu virtual,
+        planetário e site científico, pensada para que qualquer pessoa explore planetas, luas,
+        estrelas e galáxias com a mesma curiosidade de quem caminha por um observatório.
+      </p>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="wrap">
+      <div class="rich-sections">
+        <div class="rich-section reveal">
+          <h3>Arquitetura</h3>
+          <div class="body">
+            <p>Todo o conteúdo do site é estruturado em arquivos JSON independentes — planetas, luas,
+            estrelas, galáxias e glossário — carregados sob demanda pelo JavaScript. Isso torna trivial
+            adicionar novos objetos astronômicos sem tocar no código das páginas.</p>
+          </div>
+        </div>
+        <div class="rich-section reveal">
+          <h3>Tecnologia</h3>
+          <div class="body">
+            <p>Construído inteiramente com HTML5, CSS3 e JavaScript puro, sem frameworks. O layout é
+            injetado dinamicamente pelo <code class="mono">router.js</code>, os dados são resolvidos pelo
+            <code class="mono">loader.js</code>, e a busca, os sliders e as animações vivem em módulos
+            próprios e independentes.</p>
+          </div>
+        </div>
+        <div class="rich-section reveal">
+          <h3>Próximos passos</h3>
+          <div class="body">
+            <p>A arquitetura foi pensada para crescer: modelos 3D com Three.js, comparador de tamanhos,
+            simulação de órbitas, mapa do céu em tempo real, fases da Lua, calendário astronômico,
+            favoritos, modo offline e suporte a múltiplos idiomas estão no roteiro do projeto.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer id="site-footer"></footer>
+
+<script src="js/loader.js?v=2"></script>
+<script src="js/router.js?v=2"></script>
+<script src="js/slider.js?v=2"></script>
+<script src="js/search.js?v=2"></script>
+<script src="js/ui.js?v=2"></script>
+<script src="js/main.js?v=2"></script>
+</body>
+</html>

@@ -1,0 +1,348 @@
+[
+  {
+    "id": "mercurio",
+    "nome": "Mercúrio",
+    "simbolo": "☿",
+    "categoria": "planeta",
+    "ordem": 1,
+    "cor_predominante": "#9c9088",
+    "descricao_curta": "O menor planeta e o mais próximo do Sol, um mundo de extremos térmicos e superfície craterizada.",
+    "descricao_completa": "Mercúrio é o planeta mais interno do Sistema Solar e o menor entre os oito planetas. Sua proximidade ao Sol resulta em variações de temperatura extremas entre o dia e a noite, já que praticamente não possui atmosfera para reter calor. Sua superfície lembra a da Lua, coberta por crateras de impacto acumuladas ao longo de bilhões de anos.",
+    "diametro": "4.879 km",
+    "massa": "3,30 × 10^23 kg",
+    "gravidade": "3,7 m/s²",
+    "temperatura": "-173°C a 427°C",
+    "distancia_sol": "57,9 milhões km",
+    "periodo_orbital": "88 dias terrestres",
+    "periodo_rotacao": "58,6 dias terrestres",
+    "tipo": "Rochoso",
+    "numero_luas": 0,
+    "imagem_capa": "mercurio_capa",
+    "galeria": [
+      "mercurio_1",
+      "mercurio_2",
+      "mercurio_3"
+    ],
+    "luas": [],
+    "secoes": {
+      "historia": "Conhecido desde a Antiguidade por astrônomos babilônios, gregos e chineses, Mercúrio recebeu o nome do mensageiro veloz dos deuses romanos por sua rápida translação ao redor do Sol.",
+      "caracteristicas": "É o menor planeta do Sistema Solar e o mais próximo da nossa estrela. Sua órbita é a mais excêntrica entre os planetas, o que contribui para as variações térmicas extremas.",
+      "formacao": "Formou-se há cerca de 4,5 bilhões de anos a partir do disco protoplanetário, na região mais quente próxima ao jovem Sol, favorecendo a concentração de materiais rochosos e metálicos.",
+      "atmosfera": "Possui apenas uma exosfera tênue, composta principalmente de oxigênio, sódio, hidrogênio, hélio e potássio, incapaz de reter calor ou bloquear radiação.",
+      "geologia": "Superfície dominada por crateras de impacto, planícies de lava solidificada e escarpas formadas pelo resfriamento e contração do núcleo metálico do planeta.",
+      "curiosidades": "Um dia em Mercúrio (de nascer a nascer do sol) dura cerca de 176 dias terrestres — mais que o seu próprio ano.",
+      "exploracao": "As missões Mariner 10 e MESSENGER, da NASA, e a BepiColombo, da ESA/JAXA, mapearam sua superfície e estudaram seu campo magnético.",
+      "missoes": [
+        "Mariner 10 (1974)",
+        "MESSENGER (2011–2015)",
+        "BepiColombo (em curso)"
+      ],
+      "bibliografia": "NASA Solar System Exploration; ESA Science & Technology; dados compilados de observações do MESSENGER."
+    }
+  },
+  {
+    "id": "venus",
+    "nome": "Vênus",
+    "simbolo": "♀",
+    "categoria": "planeta",
+    "ordem": 2,
+    "cor_predominante": "#d9b88f",
+    "descricao_curta": "O planeta mais quente do Sistema Solar, envolto em nuvens densas de ácido sulfúrico.",
+    "descricao_completa": "Vênus é frequentemente chamado de irmão gêmeo da Terra por seu tamanho e massa semelhantes, mas sua atmosfera espessa de dióxido de carbono provoca um efeito estufa extremo, tornando-o o planeta mais quente do Sistema Solar, mesmo sendo mais distante do Sol que Mercúrio.",
+    "diametro": "12.104 km",
+    "massa": "4,87 × 10^24 kg",
+    "gravidade": "8,87 m/s²",
+    "temperatura": "~464°C (constante)",
+    "distancia_sol": "108,2 milhões km",
+    "periodo_orbital": "225 dias terrestres",
+    "periodo_rotacao": "243 dias terrestres (retrógrada)",
+    "tipo": "Rochoso",
+    "numero_luas": 0,
+    "imagem_capa": "venus_capa",
+    "galeria": [
+      "venus_1",
+      "venus_2",
+      "venus_3"
+    ],
+    "luas": [],
+    "secoes": {
+      "historia": "Visível a olho nu como um dos objetos mais brilhantes do céu, Vênus foi associado pelos romanos à deusa do amor e da beleza.",
+      "caracteristicas": "Possui rotação retrógrada e extremamente lenta: um dia venusiano é mais longo que seu próprio ano.",
+      "formacao": "Formou-se na mesma região do disco protoplanetário que originou a Terra, mas seguiu um caminho evolutivo diferente devido à intensidade solar recebida.",
+      "atmosfera": "Atmosfera densa composta por cerca de 96% de dióxido de carbono, com nuvens de ácido sulfúrico que refletem grande parte da luz solar.",
+      "geologia": "Superfície vulcânica extensa, com milhares de vulcões, planícies de lava e poucas crateras de impacto recentes.",
+      "curiosidades": "A pressão atmosférica na superfície de Vênus equivale à encontrada a quase 1 km de profundidade nos oceanos terrestres.",
+      "exploracao": "As sondas soviéticas Venera foram as primeiras a pousar em sua superfície hostil; a Magalhães (NASA) mapeou o planeta por radar.",
+      "missoes": [
+        "Venera 7–14 (URSS)",
+        "Magalhães (1990–1994)",
+        "Akatsuki (JAXA, em curso)"
+      ],
+      "bibliografia": "NASA Solar System Exploration; Roscosmos Venera archive; JAXA Akatsuki mission data."
+    }
+  },
+  {
+    "id": "terra",
+    "nome": "Terra",
+    "simbolo": "🜨",
+    "categoria": "planeta",
+    "ordem": 3,
+    "cor_predominante": "#3f7fb8",
+    "descricao_curta": "O único mundo conhecido a abrigar vida, coberto em sua maior parte por água líquida.",
+    "descricao_completa": "A Terra é o terceiro planeta a partir do Sol e o único corpo celeste conhecido a abrigar vida. Sua distância da estrela, campo magnético protetor e atmosfera rica em oxigênio e nitrogênio criam condições únicas para a existência de água líquida em sua superfície.",
+    "diametro": "12.742 km",
+    "massa": "5,97 × 10^24 kg",
+    "gravidade": "9,8 m/s²",
+    "temperatura": "-88°C a 58°C",
+    "distancia_sol": "149,6 milhões km",
+    "periodo_orbital": "365,25 dias",
+    "periodo_rotacao": "23h 56min",
+    "tipo": "Rochoso",
+    "numero_luas": 1,
+    "imagem_capa": "terra_capa",
+    "galeria": [
+      "terra_1",
+      "terra_2",
+      "terra_3"
+    ],
+    "luas": [
+      "lua"
+    ],
+    "secoes": {
+      "historia": "Observada e estudada desde os primórdios da civilização, a Terra só foi compreendida como um planeta em órbita solar a partir da revolução copernicana.",
+      "caracteristicas": "Possui um campo magnético gerado pelo núcleo externo líquido, que protege a superfície do vento solar e da radiação cósmica.",
+      "formacao": "Formou-se há 4,54 bilhões de anos por acréscimo de material no disco protoplanetário, com um grande impacto posterior originando a Lua.",
+      "atmosfera": "Composta principalmente por nitrogênio (78%) e oxigênio (21%), com traços de outros gases essenciais ao efeito estufa moderado que sustenta a vida.",
+      "geologia": "Superfície ativa geologicamente, com placas tectônicas em constante movimento, formando continentes, cadeias montanhosas e fossas oceânicas.",
+      "curiosidades": "É o único planeta do Sistema Solar cujo nome não deriva da mitologia greco-romana.",
+      "exploracao": "Milhares de satélites artificiais orbitam a Terra, incluindo a Estação Espacial Internacional, habitada continuamente desde 2000.",
+      "missoes": [
+        "Estação Espacial Internacional (1998–presente)",
+        "Programa Landsat",
+        "Constelações de observação climática"
+      ],
+      "bibliografia": "NASA Earth Observatory; IPCC Climate Reports; USGS Earthquake Hazards Program."
+    }
+  },
+  {
+    "id": "marte",
+    "nome": "Marte",
+    "simbolo": "♂",
+    "categoria": "planeta",
+    "ordem": 4,
+    "cor_predominante": "#b5502f",
+    "descricao_curta": "O planeta vermelho, alvo principal da exploração robótica e futuras missões humanas.",
+    "descricao_completa": "Marte é o quarto planeta do Sistema Solar, conhecido por sua coloração avermelhada causada pelo óxido de ferro em sua superfície. É o corpo mais estudado por sondas robóticas fora da Terra, com evidências de água líquida em seu passado remoto.",
+    "diametro": "6.779 km",
+    "massa": "6,42 × 10^23 kg",
+    "gravidade": "3,71 m/s²",
+    "temperatura": "-153°C a 20°C",
+    "distancia_sol": "227,9 milhões km",
+    "periodo_orbital": "687 dias terrestres",
+    "periodo_rotacao": "24h 37min",
+    "tipo": "Rochoso",
+    "numero_luas": 2,
+    "imagem_capa": "marte_capa",
+    "galeria": [
+      "marte_1",
+      "marte_2",
+      "marte_3"
+    ],
+    "luas": [
+      "fobos",
+      "deimos"
+    ],
+    "secoes": {
+      "historia": "Seu brilho avermelhado levou os romanos a associá-lo ao deus da guerra; observações telescópicas do século XIX alimentaram especulações sobre canais artificiais.",
+      "caracteristicas": "Abriga o Olympus Mons, o maior vulcão do Sistema Solar, e o Valles Marineris, um sistema de cânions com milhares de quilômetros de extensão.",
+      "formacao": "Formou-se há 4,5 bilhões de anos; perdeu grande parte de sua atmosfera e campo magnético ao longo de sua história geológica.",
+      "atmosfera": "Atmosfera tênue composta majoritariamente por dióxido de carbono, insuficiente para reter calor de forma significativa.",
+      "geologia": "Superfície com evidências de antigos leitos de rios e lagos, calotas polares de gelo de água e CO2, e vasta atividade vulcânica extinta.",
+      "curiosidades": "Um dia marciano é chamado de 'sol' e dura apenas 37 minutos a mais que um dia terrestre.",
+      "exploracao": "Alvo de dezenas de missões orbitais e de superfície, incluindo os rovers Curiosity e Perseverance, que buscam sinais de vida passada.",
+      "missoes": [
+        "Viking 1 e 2 (1976)",
+        "Curiosity (2012–presente)",
+        "Perseverance (2021–presente)"
+      ],
+      "bibliografia": "NASA Mars Exploration Program; JPL Mission Archives; ESA ExoMars."
+    }
+  },
+  {
+    "id": "jupiter",
+    "nome": "Júpiter",
+    "simbolo": "♃",
+    "categoria": "planeta",
+    "ordem": 5,
+    "cor_predominante": "#c88b5a",
+    "descricao_curta": "O maior planeta do Sistema Solar, um gigante gasoso conhecido por suas tempestades colossais e dezenas de luas.",
+    "descricao_completa": "Júpiter é o quinto planeta do Sistema Solar e o maior de todos. Formado principalmente por hidrogênio e hélio, possui uma atmosfera extremamente dinâmica, marcada pela Grande Mancha Vermelha, uma tempestade que persiste há séculos.",
+    "diametro": "139.820 km",
+    "massa": "1,898 × 10^27 kg",
+    "gravidade": "24,79 m/s²",
+    "temperatura": "-110°C",
+    "distancia_sol": "778,5 milhões km",
+    "periodo_orbital": "11,86 anos terrestres",
+    "periodo_rotacao": "9h 56min",
+    "tipo": "Gigante gasoso",
+    "numero_luas": 95,
+    "imagem_capa": "jupiter_capa",
+    "galeria": [
+      "jupiter_1",
+      "jupiter_2",
+      "jupiter_3"
+    ],
+    "luas": [
+      "io",
+      "europa",
+      "ganimedes",
+      "calisto"
+    ],
+    "secoes": {
+      "historia": "Observado desde a antiguidade, Júpiter recebeu o nome do principal deus romano. Em 1610, Galileu Galilei observou suas quatro maiores luas, revolucionando a compreensão do Sistema Solar.",
+      "caracteristicas": "Possui uma atmosfera composta principalmente por hidrogênio e hélio, com faixas de nuvens coloridas e tempestades gigantes como a Grande Mancha Vermelha.",
+      "formacao": "Formou-se há aproximadamente 4,5 bilhões de anos a partir do material restante da formação do Sol, tornando-se o maior planeta do Sistema Solar.",
+      "atmosfera": "Sua atmosfera é composta por hidrogênio, hélio, metano e amônia, com ventos que podem ultrapassar centenas de quilômetros por hora.",
+      "geologia": "Por ser um gigante gasoso, não possui uma superfície sólida definida. Seu interior possui camadas de hidrogênio metálico sob enorme pressão.",
+      "curiosidades": "Júpiter possui uma massa maior que todos os outros planetas do Sistema Solar juntos e seu campo magnético é extremamente poderoso.",
+      "exploracao": "Foi estudado por diversas sondas, incluindo Voyager, Galileo, Juno e outras missões que analisaram sua atmosfera, magnetosfera e luas.",
+      "missoes": [
+        "Voyager 1 (1979)",
+        "Galileo (1995–2003)",
+        "Juno (2016–presente)"
+      ],
+      "bibliografia": "NASA Solar System Exploration; Juno Mission; Jet Propulsion Laboratory."
+    }
+  },
+  {
+    "id": "saturno",
+    "nome": "Saturno",
+    "simbolo": "♄",
+    "categoria": "planeta",
+    "ordem": 6,
+    "cor_predominante": "#d9c07a",
+    "descricao_curta": "O planeta dos anéis, um gigante gasoso famoso por seu espetacular sistema de anéis de gelo e rocha.",
+    "descricao_completa": "Saturno é o sexto planeta a partir do Sol e o segundo maior do Sistema Solar. É famoso por seu deslumbrante sistema de anéis, composto majoritariamente por partículas de gelo e rocha, e por sua vasta família de luas, incluindo Titã, maior que o planeta Mercúrio.",
+    "diametro": "116.460 km",
+    "massa": "5,68 × 10^26 kg",
+    "gravidade": "10,44 m/s²",
+    "temperatura": "-178°C (média)",
+    "distancia_sol": "1,43 bilhão km",
+    "periodo_orbital": "29,4 anos terrestres",
+    "periodo_rotacao": "10h 42min",
+    "tipo": "Gigante gasoso",
+    "numero_luas": 146,
+    "imagem_capa": "saturno_capa",
+    "galeria": [
+      "saturno_1",
+      "saturno_2",
+      "saturno_3"
+    ],
+    "luas": [
+      "tita",
+      "encelado",
+      "mimas"
+    ],
+    "secoes": {
+      "historia": "Conhecido desde a Antiguidade, Saturno teve seus anéis identificados corretamente por Christiaan Huygens em 1655, usando um telescópio mais avançado que o de Galileu.",
+      "caracteristicas": "Possui a menor densidade média entre todos os planetas do Sistema Solar — seria capaz de flutuar em água, caso existisse um oceano grande o suficiente.",
+      "formacao": "Formou-se há 4,5 bilhões de anos a partir de gás e poeira do disco protoplanetário; seus anéis podem ter se originado de luas ou cometas fragmentados.",
+      "atmosfera": "Composta majoritariamente por hidrogênio e hélio, com ventos que podem ultrapassar 1.800 km/h em seu equador.",
+      "geologia": "Como gigante gasoso, não possui superfície sólida definida; seu interior provavelmente abriga um núcleo rochoso envolto por camadas de hidrogênio metálico.",
+      "curiosidades": "Os anéis de Saturno têm até 280 mil km de diâmetro, mas em alguns pontos menos de 1 km de espessura.",
+      "exploracao": "A sonda Cassini orbitou Saturno por 13 anos, revelando detalhes sem precedentes sobre seus anéis e luas antes de mergulhar na atmosfera do planeta em 2017.",
+      "missoes": [
+        "Pioneer 11 (1979)",
+        "Voyager 1 e 2 (1980–1981)",
+        "Cassini-Huygens (2004–2017)"
+      ],
+      "bibliografia": "NASA Cassini Mission Archive; ESA Huygens Probe Data; JPL Planetary Data System."
+    }
+  },
+  {
+    "id": "urano",
+    "nome": "Urano",
+    "simbolo": "♅",
+    "categoria": "planeta",
+    "ordem": 7,
+    "cor_predominante": "#8bd4d8",
+    "descricao_curta": "Um gigante de gelo com rotação inclinada e uma atmosfera azul-esverdeada.",
+    "descricao_completa": "Urano é o sétimo planeta do Sistema Solar e pertence ao grupo dos gigantes de gelo. Sua característica mais marcante é sua inclinação extrema, fazendo com que pareça girar de lado.",
+    "diametro": "50.724 km",
+    "massa": "8,681 × 10^25 kg",
+    "gravidade": "8,69 m/s²",
+    "temperatura": "-195°C",
+    "distancia_sol": "2,87 bilhões km",
+    "periodo_orbital": "84 anos terrestres",
+    "periodo_rotacao": "17h 14min",
+    "tipo": "Gigante de gelo",
+    "numero_luas": 28,
+    "imagem_capa": "urano_capa",
+    "galeria": [
+      "urano_1",
+      "urano_2",
+      "urano_3"
+    ],
+    "luas": [
+      "titania",
+      "oberon",
+      "ariel",
+      "umbriel",
+      "miranda"
+    ],
+    "secoes": {
+      "historia": "Descoberto em 1781 por William Herschel, Urano foi o primeiro planeta identificado com telescópio.",
+      "caracteristicas": "Possui uma coloração azul-esverdeada causada pelo metano em sua atmosfera e apresenta anéis escuros e discretos.",
+      "formacao": "Formou-se nas regiões externas e frias do Sistema Solar, acumulando grandes quantidades de gelo e gases.",
+      "atmosfera": "Composta principalmente por hidrogênio, hélio e metano, responsável pela sua aparência azulada.",
+      "geologia": "Seu interior contém água, amônia e metano em estado líquido sob altas pressões.",
+      "curiosidades": "Sua inclinação axial de aproximadamente 98 graus faz com que tenha estações extremas.",
+      "exploracao": "A única visita próxima foi realizada pela Voyager 2 em 1986.",
+      "missoes": [
+        "Voyager 2 (1986)"
+      ],
+      "bibliografia": "NASA Uranus Exploration; Voyager Mission Archives."
+    }
+  },
+  {
+    "id": "netuno",
+    "nome": "Netuno",
+    "simbolo": "♆",
+    "categoria": "planeta",
+    "ordem": 8,
+    "cor_predominante": "#4169e1",
+    "descricao_curta": "O planeta mais distante do Sistema Solar, conhecido por seus ventos extremamente rápidos.",
+    "descricao_completa": "Netuno é o oitavo planeta do Sistema Solar e o mais distante do Sol. É um gigante de gelo com uma atmosfera dinâmica e ventos que estão entre os mais rápidos conhecidos.",
+    "diametro": "49.244 km",
+    "massa": "1,024 × 10^26 kg",
+    "gravidade": "11,15 m/s²",
+    "temperatura": "-200°C",
+    "distancia_sol": "4,5 bilhões km",
+    "periodo_orbital": "164,8 anos terrestres",
+    "periodo_rotacao": "16h 6min",
+    "tipo": "Gigante de gelo",
+    "numero_luas": 16,
+    "imagem_capa": "netuno_capa",
+    "galeria": [
+      "netuno_1",
+      "netuno_2",
+      "netuno_3"
+    ],
+    "luas": [
+      "tritao"
+    ],
+    "secoes": {
+      "historia": "Descoberto em 1846 através de previsões matemáticas baseadas em perturbações na órbita de Urano.",
+      "caracteristicas": "Possui uma atmosfera azul intensa e tempestades gigantes, além de ventos superiores a 2.000 km/h.",
+      "formacao": "Formou-se nas regiões externas do Sistema Solar, acumulando materiais gelados e gases.",
+      "atmosfera": "Composta principalmente por hidrogênio, hélio e metano, que dá sua coloração azul.",
+      "geologia": "Possui um interior rico em água, amônia e metano sob enormes pressões.",
+      "curiosidades": "Netuno leva quase 165 anos para completar uma volta ao redor do Sol.",
+      "exploracao": "Foi visitado apenas pela Voyager 2 em 1989, que revelou detalhes sobre suas luas e atmosfera.",
+      "missoes": [
+        "Voyager 2 (1989)"
+      ],
+      "bibliografia": "NASA Neptune Exploration; Voyager Mission Archives."
+    }
+  }
+]

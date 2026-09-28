@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Visão do Espaço — Enciclopédia Visual do Universo</title>
+  <meta name="description"
+    content="Uma enciclopédia visual do Universo: explore planetas, luas, estrelas e galáxias." />
+  <link rel="stylesheet" href="css/style.css?v=2" />
+  <link rel="stylesheet" href="css/components.css?v=2" />
+  <link rel="stylesheet" href="css/animations.css?v=2" />
+</head>
+
+<body data-page="home">
+  <canvas id="starfield"></canvas>
+  <header class="site-header" id="site-header"></header>
+
+  <main>
+    <section class="hero-slider" style="padding:0">
+      <div class="hero-track"></div>
+      <div class="hero-nav"></div>
+      <div class="hero-arrows">
+        <button data-hero-prev aria-label="Anterior">←</button>
+        <button data-hero-next aria-label="Próximo">→</button>
+      </div>
+    </section>
+
+    <section id="sistema-solar">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <div class="eyebrow">Explore o Universo</div>
+            <h2>O Sistema Solar</h2>
+            <p>Do Sol até os confins gelados, cada mundo tem sua própria história geológica, atmosférica e orbital.</p>
+          </div>
+        </div>
+        <div class="card-grid reveal-stagger" data-sistema-solar></div>
+      </div>
+    </section>
+    <div data-category-sections></div>
+
+    <section>
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <div class="eyebrow">Categorias</div>
+            <h2>Comece sua exploração</h2>
+          </div>
+        </div>
+        <div class="card-grid reveal-stagger" data-categorias></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="banner reveal">
+          <div class="icon">✦</div>
+          <div>
+            <div class="eyebrow">Curiosidade do dia</div>
+            <p style="color:var(--ink);opacity:.9;font-size:1.05rem;margin:0" data-curiosidade>Carregando curiosidade...
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <div class="eyebrow">Linha do tempo</div>
+            <h2>Marcos da exploração espacial</h2>
+          </div>
+        </div>
+        <div class="timeline reveal" data-timeline></div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script src="js/loader.js?v=2"></script>
+  <script src="js/router.js?v=2"></script>
+  <script src="js/slider.js?v=2"></script>
+  <script src="js/search.js?v=2"></script>
+  <script src="js/ui.js?v=2"></script>
+  <script src="js/main.js?v=2"></script>
+</body>
+
+</html>

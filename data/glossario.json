@@ -1,0 +1,34 @@
+[
+  {
+    "termo": "Afélio",
+    "definicao": "Ponto da órbita de um corpo celeste em que ele está mais distante do Sol."
+  },
+  {
+    "termo": "Periélio",
+    "definicao": "Ponto da órbita de um corpo celeste em que ele está mais próximo do Sol."
+  },
+  {
+    "termo": "Excentricidade orbital",
+    "definicao": "Medida de quanto uma órbita se desvia de um círculo perfeito, variando de 0 (círculo) a valores próximos de 1 (elipse alongada)."
+  },
+  {
+    "termo": "Exosfera",
+    "definicao": "Camada atmosférica mais externa e rarefeita, onde as partículas podem escapar para o espaço."
+  },
+  {
+    "termo": "Regolito",
+    "definicao": "Camada de material solto, formada por poeira e fragmentos de rocha, que cobre a superfície sólida de planetas e luas."
+  },
+  {
+    "termo": "Anã amarela",
+    "definicao": "Classificação de estrelas de sequência principal de tamanho e temperatura médios, como o Sol."
+  },
+  {
+    "termo": "Disco protoplanetário",
+    "definicao": "Disco de gás e poeira que circunda uma estrela jovem, a partir do qual planetas podem se formar."
+  },
+  {
+    "termo": "Efeito estufa",
+    "definicao": "Fenômeno em que gases atmosféricos retêm calor, elevando a temperatura da superfície de um planeta."
+  }
+]

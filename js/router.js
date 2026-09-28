@@ -20,7 +20,7 @@ function renderHeader() {
   if (!el) return;
   el.innerHTML = `
     <div class="header-inner">
-      <a href="index.html" class="brand"><img src="img/logo/logo-dark.png"> Visão do Espaço</a>
+      <a href="index.html" class="brand"><img src="img/logo/logo-dark.png" width="50"> Visão do Espaço</a>
       <nav class="main-nav">
         ${navItems().map(i => `<a href="${i.href}" data-page="${i.page}">${i.label}</a>`).join('')}
       </nav>

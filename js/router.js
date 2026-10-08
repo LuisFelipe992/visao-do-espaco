@@ -11,6 +11,7 @@ function navItems() {
     { label: 'Sistema Solar', href: 'index.html#sistema-solar', page: 'home' },
     ...CATEGORIAS.filter(c => c.menu).map(c => ({ label: c.nome, href: `categoria.html?cat=${c.key}`, page: c.key })),
     { label: 'Glossário', href: 'glossario.html', page: 'glossario' },
+    { label: 'Comparar', href: 'comparar.html', page: 'comparar' },
     { label: 'Sobre', href: 'sobre.html', page: 'sobre' }
   ];
 }
@@ -20,7 +21,7 @@ function renderHeader() {
   if (!el) return;
   el.innerHTML = `
     <div class="header-inner">
-      <a href="index.html" class="brand"><img src="img/logo/logo-dark.png" width="80" style="border-radius:50%"> Visão do Espaço</a>
+      <a href="index.html" class="brand"><img src="img/logo/logo-dark.png" width="36" height="36" alt="" style="border-radius:50%" onerror="this.remove()"> Visão do Espaço</a>
       <nav class="main-nav">
         ${navItems().map(i => `<a href="${i.href}" data-page="${i.page}">${i.label}</a>`).join('')}
       </nav>
@@ -40,7 +41,8 @@ function renderFooter() {
   const links = [
     `<li><a href="index.html#sistema-solar">Sistema Solar</a></li>`,
     ...CATEGORIAS.filter(c => c.menu).map(c => `<li><a href="categoria.html?cat=${c.key}">${c.nome}</a></li>`),
-    `<li><a href="glossario.html">Glossário</a></li>`
+    `<li><a href="glossario.html">Glossário</a></li>`,
+    `<li><a href="comparar.html">Comparar objetos</a></li>`
   ].join('');
   el.innerHTML = `
     <div class="wrap footer-grid">

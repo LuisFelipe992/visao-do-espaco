@@ -52,7 +52,7 @@ async function renderHome() {
             <p class="lead">${obj.descricao_curta}</p>
             <a class="btn primary" href="${href}">Explorar ${obj.nome} →</a>
           </div>
-          <div class="orb${ring}" style="--orb-color:${obj.cor_predominante}"></div>
+          <div class="orb${ring}" style="${orbStyle(obj)}"></div>
         </div>`;
     });
   }
@@ -297,10 +297,22 @@ function renderDetailHero(obj, kicker, showSymbol = true) {
   const orbEl = heroEl.querySelector('.orb');
   if (orbEl) {
     orbEl.className = `orb${ring}`;
-    orbEl.style.setProperty('--orb-color', obj.cor_predominante || '#7b6fd6');
+    orbEl.setAttribute('style', orbStyle(obj));
   }
   const symbolEl = heroEl.querySelector('[data-symbol]');
   if (symbolEl) symbolEl.textContent = showSymbol ? (obj.simbolo || '') : '';
+
+  // botão "Comparar" — inserido ao lado do botão "Explorar dados"
+  const primaryBtn = heroEl.querySelector('a.btn.primary');
+  if (primaryBtn && !heroEl.querySelector('[data-compare-btn]')) {
+    const compareBtn = document.createElement('a');
+    compareBtn.href = '#';
+    compareBtn.className = 'btn';
+    compareBtn.setAttribute('data-compare-btn', '');
+    compareBtn.textContent = '⇄ Comparar';
+    compareBtn.addEventListener('click', e => { e.preventDefault(); addToCompareAndGo(obj.id); });
+    primaryBtn.insertAdjacentElement('afterend', compareBtn);
+  }
 }
 
 function renderFactGrid(facts) {
@@ -335,11 +347,24 @@ function renderRichSections(secoes) {
   }).join('');
 }
 
+/* Cada item da galeria pode ser:
+   - uma string com caminho de imagem real, ex. "img/saturno/aneis.jpg"
+   - uma string "legada" sem extensão (ex. "sol_1") -> mantém a ilustração em CSS
+   - um objeto { "imagem": "img/...", "legenda": "Texto opcional" } */
 function renderGallery(obj) {
   const el = document.querySelector('[data-gallery-track]');
   if (!el) return;
   const items = obj.galeria && obj.galeria.length ? obj.galeria : [obj.imagem_capa];
-  el.innerHTML = items.map(() => `<div class="orb" style="--orb-color:${obj.cor_predominante || '#7b6fd6'}"></div>`).join('');
+  el.innerHTML = items.map(item => {
+    const imagem = typeof item === 'object' && item ? item.imagem : item;
+    const legenda = typeof item === 'object' && item ? item.legenda : '';
+    const style = isImagePath(imagem)
+      ? orbStyle({ ...obj, imagem_capa: imagem })
+      : `--orb-color:${obj.cor_predominante || '#7b6fd6'}`;
+    return legenda
+      ? `<figure class="gallery-item"><div class="orb" style="${style}"></div><figcaption>${legenda}</figcaption></figure>`
+      : `<div class="orb" style="${style}"></div>`;
+  }).join('');
   const wrap = el.closest('.hslider-wrap');
   if (wrap) enableHSlider(wrap);
 }

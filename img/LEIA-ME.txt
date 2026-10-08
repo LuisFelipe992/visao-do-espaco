@@ -1,0 +1,12 @@
+Coloque aqui as imagens do site.
+  img/logo/logo-dark.png      -> logo do cabeçalho
+  img/<qualquer-pasta>/x.jpg  -> referencie no JSON do objeto:
+
+  "imagem_capa": "img/planetas/saturno.jpg",
+  "galeria": [
+    "img/planetas/saturno-aneis.jpg",
+    { "imagem": "img/planetas/saturno-polo.jpg", "legenda": "Hexágono polar" },
+    "saturno_3"
+  ]
+
+Itens sem extensão de imagem (ex.: "saturno_3") continuam usando a ilustração em CSS.

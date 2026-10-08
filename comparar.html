@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Comparar objetos — Visão do Espaço</title>
+<link rel="stylesheet" href="css/style.css?v=3" />
+<link rel="stylesheet" href="css/components.css?v=3" />
+<link rel="stylesheet" href="css/animations.css?v=3" />
+</head>
+<body data-page="comparar">
+<canvas id="starfield"></canvas>
+<header class="site-header" id="site-header"></header>
+
+<main data-comparar-root>
+  <section style="padding-top:64px;padding-bottom:0">
+    <div class="wrap">
+      <div class="eyebrow reveal">Ferramenta</div>
+      <h1 class="reveal">Comparar objetos</h1>
+      <p class="reveal" style="max-width:60ch">
+        Escolha dois ou mais objetos — de qualquer categoria — e veja lado a lado o que os diferencia:
+        tamanho, massa, temperatura e muito mais.
+      </p>
+    </div>
+  </section>
+
+  <section style="padding-top:28px">
+    <div class="wrap">
+      <div class="compare-picker reveal">
+        <select data-compare-picker></select>
+        <button class="btn primary" data-compare-add type="button">+ Adicionar</button>
+        <button class="btn" data-compare-clear type="button">Limpar tudo</button>
+      </div>
+      <div class="compare-chips" data-compare-chips></div>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="wrap">
+      <div data-compare-table></div>
+    </div>
+  </section>
+</main>
+
+<footer id="site-footer"></footer>
+
+<script src="js/loader.js?v=3"></script>
+<script src="js/router.js?v=3"></script>
+<script src="js/slider.js?v=3"></script>
+<script src="js/search.js?v=3"></script>
+<script src="js/ui.js?v=3"></script>
+<script src="js/main.js?v=3"></script>
+<script src="js/comparar.js?v=3"></script>
+</body>
+</html>

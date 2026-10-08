@@ -84,14 +84,36 @@ function applyObjectColor(el, hexColor) {
   el.style.setProperty('--slide-color', hexColor + '55');
 }
 
+/* ---------------------------------------------------------
+   IMAGENS REAIS — opcional, por objeto
+   Se o JSON informar um caminho de arquivo (ex.: "img/saturno.jpg")
+   em imagem_capa ou num item da galeria, essa imagem é usada.
+   Caso contrário (ids curtos como "sol_1", ou campo ausente),
+   mantém-se a ilustração em CSS de sempre.
+   --------------------------------------------------------- */
+function isImagePath(str) {
+  return typeof str === 'string' && /\.(png|jpe?g|webp|gif|avif|svg)(\?.*)?$/i.test(str.trim());
+}
+
+/** Monta o `style` de um .orb: foto real (se houver) por baixo do mesmo
+    brilho/sombra em CSS, ou a cor sólida de sempre como fallback. */
+function orbStyle(obj, fallbackColor) {
+  const color = obj.cor_predominante || fallbackColor || '#7b6fd6';
+  const img = isImagePath(obj.imagem_capa) ? obj.imagem_capa : null;
+  if (!img) return `--orb-color:${color}`;
+  return `--orb-color:${color}; background-image:` +
+    `radial-gradient(circle at 32% 28%, rgba(255,255,255,0.45), transparent 42%),` +
+    `radial-gradient(circle at 66% 72%, rgba(0,0,0,0.45), transparent 60%),` +
+    `url('${img}'); background-size: cover; background-position: center;`;
+}
+
 /** Constrói um card de objeto (planeta/lua/estrela/galáxia) reutilizável */
 function objectCardHTML(obj, href, kicker, fallbackColor) {
-  const color = obj.cor_predominante || fallbackColor || '#7b6fd6';
   const ring = obj.id === 'saturno' ? ' has-ring' : '';
   return `
     <a class="obj-card reveal" href="${href}">
       <div class="thumb">
-        <div class="orb${ring}" style="--orb-color:${color}"></div>
+        <div class="orb${ring}" style="${orbStyle(obj, fallbackColor)}"></div>
       </div>
       <div class="info">
         <div class="kicker">${kicker}</div>
@@ -99,6 +121,26 @@ function objectCardHTML(obj, href, kicker, fallbackColor) {
         <p>${obj.descricao_curta || ''}</p>
       </div>
     </a>`;
+}
+
+/* ---------------------------------------------------------
+   COMPARADOR — lista persistida em localStorage, usada por
+   comparar.html e pelo botão "Comparar" nas páginas de detalhe.
+   --------------------------------------------------------- */
+const COMPARE_KEY = 'visao_compare';
+
+function getCompareList() {
+  try { return JSON.parse(localStorage.getItem(COMPARE_KEY)) || []; }
+  catch (e) { return []; }
+}
+function setCompareList(ids) {
+  localStorage.setItem(COMPARE_KEY, JSON.stringify([...new Set(ids)]));
+}
+function addToCompareAndGo(id) {
+  const list = getCompareList();
+  if (!list.includes(id)) list.push(id);
+  setCompareList(list);
+  window.location.href = 'comparar.html';
 }
 
 function initHeader() {

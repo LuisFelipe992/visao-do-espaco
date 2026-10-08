@@ -285,11 +285,40 @@ nav.main-nav a:hover, nav.main-nav a.active{ color: var(--ink); background: rgba
 
 /* ---------- comparador ---------- */
 .compare-picker{ display:flex; gap: 12px; flex-wrap: wrap; margin-bottom: 18px; }
-.compare-picker select{
-  flex: 1 1 320px; min-width: 220px;
-  padding: 12px 16px; border-radius: 999px; border: 1px solid var(--line);
-  background: rgba(255,255,255,0.03); color: var(--ink); font-family: var(--f-body); font-size: 0.88rem;
+.combo{ position: relative; flex: 1 1 320px; min-width: 240px; }
+.combo-input{
+  width: 100%; padding: 13px 18px 13px 42px; border-radius: 999px;
+  border: 1px solid var(--line); background: rgba(255,255,255,0.04); color: var(--ink);
+  font-family: var(--f-body); font-size: 0.92rem;
 }
+.combo-input::placeholder{ color: var(--dim); }
+.combo-input:focus{ outline: none; border-color: var(--purple-neon); }
+.combo::before{
+  content:"⌕"; position:absolute; left: 16px; top: 50%; transform: translateY(-50%);
+  color: var(--dim); font-size: 1.1rem; pointer-events: none; z-index: 1;
+}
+.combo-list{
+  position: absolute; top: calc(100% + 8px); left: 0; right: 0; z-index: 50;
+  background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius-sm);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.55); max-height: 340px; overflow-y: auto;
+  opacity: 0; visibility: hidden; transform: translateY(-6px);
+  transition: opacity .2s var(--ease), transform .2s var(--ease), visibility .2s;
+}
+.combo-list.open{ opacity: 1; visibility: visible; transform: translateY(0); }
+.combo-item{
+  display:flex; align-items:center; justify-content: space-between; gap: 12px;
+  padding: 12px 16px; border-bottom: 1px solid var(--line-soft);
+  color: var(--ink); font-size: 0.92rem; cursor: pointer;
+}
+.combo-item:last-child{ border-bottom: none; }
+.combo-item.active, .combo-item:hover{ background: rgba(180,107,255,0.14); }
+.combo-item.done{ opacity: 0.55; }
+.combo-item .tag{
+  font-family: var(--f-mono); font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.06em;
+  color: var(--purple-neon); border: 1px solid rgba(180,107,255,0.35); border-radius: 999px;
+  padding: 2px 8px; white-space: nowrap;
+}
+.combo-none{ padding: 18px 16px; color: var(--dim); font-family: var(--f-mono); font-size: 0.8rem; }
 .compare-chips{ display:flex; flex-wrap: wrap; gap: 10px; margin-bottom: 36px; }
 .compare-chip{
   display:flex; align-items:center; gap: 8px;

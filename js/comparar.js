@@ -17,8 +17,8 @@ async function initComparar() {
   const root = document.querySelector('[data-comparar-root]');
   if (!root) return;
 
-  const picker = document.querySelector('[data-compare-picker]');
-  const addBtn = document.querySelector('[data-compare-add]');
+  const comboInput = document.querySelector('[data-combo-input]');
+  const comboList = document.querySelector('[data-combo-list]');
   const clearBtn = document.querySelector('[data-compare-clear]');
   const chipsEl = document.querySelector('[data-compare-chips]');
   const tableWrap = document.querySelector('[data-compare-table]');
@@ -30,10 +30,8 @@ async function initComparar() {
     : getCompareList();
 
   const index = (await VisaoData.getIndex()).filter(i => i.categoria !== 'glossário');
-  picker.innerHTML = index
-    .sort((a, b) => a.nome.localeCompare(b.nome, 'pt-BR'))
-    .map(i => `<option value="${hrefId(i.href)}">${i.nome} — ${capitalize(i.categoria)}</option>`)
-    .join('');
+  index.sort((a, b) => a.nome.localeCompare(b.nome, 'pt-BR'));
+  index.forEach(i => { i.cid = hrefId(i.href); });
 
   function hrefId(href) {
     try { return new URL(href, location.href).searchParams.get('id'); }
@@ -41,10 +39,67 @@ async function initComparar() {
   }
   function capitalize(s) { return s.charAt(0).toUpperCase() + s.slice(1); }
 
-  addBtn.addEventListener('click', () => {
-    const id = picker.value;
-    if (id && !selected.includes(id)) { selected.push(id); persist(); render(); }
+  /* ---------- combobox com busca ---------- */
+  let active = -1;
+  let shown = [];
+
+  function openList(open) {
+    comboList.classList.toggle('open', open);
+    comboInput.setAttribute('aria-expanded', open);
+  }
+
+  function renderCombo() {
+    const q = normalize(comboInput.value.trim());
+    const rank = i => {
+      const n = normalize(i.nome);
+      if (n.startsWith(q)) return 0;
+      if (n.includes(q)) return 1;
+      return 2; // casou só por tags/categoria
+    };
+    shown = (q ? index.filter(i => normalize(i.nome + ' ' + (i.extra || '') + ' ' + i.categoria).includes(q)) : [...index])
+      .sort((a, b) => rank(a) - rank(b) || a.nome.localeCompare(b.nome, 'pt-BR'))
+      .slice(0, 30);
+    active = shown.length ? 0 : -1;
+    comboList.innerHTML = shown.length
+      ? shown.map((i, n) => {
+          const done = selected.includes(i.cid);
+          return `<div class="combo-item${n === active ? ' active' : ''}${done ? ' done' : ''}" role="option" data-n="${n}">
+            <span>${i.nome}</span><span class="tag">${i.icone || '●'} ${capitalize(i.categoria)}${done ? ' ✓' : ''}</span></div>`;
+        }).join('')
+      : `<div class="combo-none">Nenhum objeto encontrado para “${comboInput.value}”.</div>`;
+    openList(true);
+  }
+
+  function setActive(n) {
+    if (!shown.length) return;
+    active = (n + shown.length) % shown.length;
+    comboList.querySelectorAll('.combo-item').forEach((el, i) => el.classList.toggle('active', i === active));
+    comboList.querySelector('.combo-item.active')?.scrollIntoView({ block: 'nearest' });
+  }
+
+  function pick(n) {
+    const item = shown[n];
+    if (!item || !item.cid) return;
+    if (!selected.includes(item.cid)) { selected.push(item.cid); persist(); render(); }
+    comboInput.value = '';
+    renderCombo();
+    comboInput.focus();
+  }
+
+  comboInput.addEventListener('focus', renderCombo);
+  comboInput.addEventListener('input', renderCombo);
+  comboInput.addEventListener('keydown', e => {
+    if (e.key === 'ArrowDown') { e.preventDefault(); setActive(active + 1); }
+    else if (e.key === 'ArrowUp') { e.preventDefault(); setActive(active - 1); }
+    else if (e.key === 'Enter') { e.preventDefault(); if (active >= 0) pick(active); }
+    else if (e.key === 'Escape') openList(false);
   });
+  comboList.addEventListener('mousedown', e => {
+    const el = e.target.closest('.combo-item');
+    if (el) { e.preventDefault(); pick(+el.dataset.n); }
+  });
+  document.addEventListener('click', e => { if (!e.target.closest('[data-combo]')) openList(false); });
+
   clearBtn.addEventListener('click', () => { selected = []; persist(); render(); });
 
   function persist() { setCompareList(selected); }
